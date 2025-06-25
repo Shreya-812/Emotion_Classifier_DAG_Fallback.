@@ -48,13 +48,14 @@ This avoids complex routing logic and uses a **self-contained fallback system** 
 
 ```bash
 pip install transformers datasets langchain langgraph
-2. Run the Script / Notebook
+```
+### 2. Run the Script / Notebook
 You can run the .ipynb file in Google Colab or Jupyter
 
 OR convert to .py and run locally
 
-3. Sample CLI Output
-vbnet
+### 3. Sample CLI Output
+```vbnet
 Copy
 Edit
 Enter input (or 'exit'): I feel terrible about everything today.
@@ -64,20 +65,21 @@ Enter input (or 'exit'): I feel terrible about everything today.
 Do you want to override it? (y/n): y
 Enter correct label: fear
 [RESULT] Final Label: fear | Fallback used: True
-Customization
+```
+### Customization
 You can fine-tune the emotion model or replace it with any text-classification model
 
 Confidence threshold is customizable in handle_confidence node
 
 Logs can be expanded to persist prediction history
 
-Files Included
+### Files Included
 Emotion_Classifier_Fallback_Simplified.ipynb — core notebook with CLI and DAG
 
 README.md — project overview and usage instructions
 
-(Optional) Exported .py modules for packaging
+Exported .py modules for packaging
 
-Credits
+### Credits
 Developed by Shreya Singh with support from Hugging Face and LangGraph libraries.
 
